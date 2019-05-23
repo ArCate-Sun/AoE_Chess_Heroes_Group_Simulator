@@ -1,26 +1,26 @@
 // structure
-// group: {
-//     name: string;
-//     type: string;
-//     image: string;
-//     feature: string;
-//     description: string;
-//     rule: {
-//         need: number;
-//         effect: string;
+// let group: {
+//     name: string;						// 名称
+//     type: string;						// 类型
+//     image: string;						// 图片
+//     feature: string;						// 特性
+//     description: string;					// 描述
+//     rule: {								// 规则
+//         need: number;					// 需要英雄数量
+//         effect: string;					// 效果
 //     }[];
 // }
 
 let bu_bing = {
-	name: "步兵",						// 名称
-	type: "blue",						// 类型
-	image: "image/group/bu_bing.jpg",	// 图片
-	feature: "凌霸",					// 特性
-	description: "需要己方场上有至少[n]个不同的步兵英雄才能激活效果.",		// 描述
-	rule: [								// 规则
+	name: "步兵",
+	type: "blue",
+	image: "image/group/bu_bing.jpg",
+	feature: "凌霸",
+	description: "需要己方场上有至少[n]个不同的步兵英雄才能激活效果.",
+	rule: [
 		{
-			need: 2,					// 需要英雄数量
-			effect: "敌方的护甲-3"			// 效果
+			need: 2,
+			effect: "敌方的护甲-3"
 		}, {
 			need: 4,
 			effect: "敌方的护甲-6"
