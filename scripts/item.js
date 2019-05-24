@@ -1,4 +1,5 @@
-let fu_nu = {
+obj={ 
+    "斧奴": {
     name: "斧奴",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -33,9 +34,9 @@ let fu_nu = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let tong_zi = {
+"童子": {
     name: "童子",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -69,10 +70,10 @@ let tong_zi = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
 
-let tian_shi = {
+"天师": {
     name: "天师",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -107,9 +108,9 @@ let tian_shi = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let shen_qiang_shou = {
+"神枪手": {
     name: "神枪手",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -143,9 +144,9 @@ let shen_qiang_shou = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let jun_yi = {
+"军医": {
     name: "军医",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -180,9 +181,9 @@ let jun_yi = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let niao_qi_bing = {
+"鸟骑兵": {
     name: "鸟骑兵",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -216,9 +217,9 @@ let niao_qi_bing = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let tie_gou = {
+"铁狗": {
     name: "铁狗",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -252,10 +253,10 @@ let tie_gou = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
 
-let yan_chong = {
+"眼虫": {
     name: "眼虫",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -289,10 +290,10 @@ let yan_chong = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
 
-let chuan_shan_jia = {
+"穿山甲": {
     name: "穿山甲",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -327,9 +328,9 @@ let chuan_shan_jia = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let wu_seng_panda= {
+"武僧熊猫": {
     name: "武僧熊猫",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -363,9 +364,9 @@ let wu_seng_panda= {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let ju_chi_xiang = {
+"巨齿象": {
     name: "巨齿象",								// 名称
     cost: 1,									// 花费
     image: [									// 图片
@@ -399,9 +400,9 @@ let ju_chi_xiang = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let zhen_ren = {
+"真人": {
     name: "真人",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -436,10 +437,10 @@ let zhen_ren = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
 
-let ling_jiu = {
+"灵鹫": {
     name: "灵鹫",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -474,9 +475,9 @@ let ling_jiu = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let lei_zhen_zi = {
+"雷震子": {
     name: "雷震子",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -511,9 +512,9 @@ let lei_zhen_zi = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let jin_gang = {
+"金刚": {
     name: "金刚",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -548,9 +549,9 @@ let jin_gang = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let jian_nu = {
+"剑奴": {
     name: "剑奴",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -584,9 +585,9 @@ let jian_nu = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let kong_xie = {
+"空蟹": {
     name: "空蟹",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -620,9 +621,9 @@ let kong_xie = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let tie_yuan = {
+"铁猿": {
     name: "铁猿",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -656,10 +657,10 @@ let tie_yuan = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
 
-let fire_bing = {
+"火焰兵": {
     name: "火焰兵",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -693,9 +694,9 @@ let fire_bing = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let hu_dun_bing = {
+"护盾兵": {
     name: "护盾兵",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -729,9 +730,9 @@ let hu_dun_bing = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let bao_lie_chong = {
+"爆裂虫": {
     name: "爆裂虫",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -765,9 +766,9 @@ let bao_lie_chong = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let meng_du_shou = {
+"猛毒兽": {
     name: "猛毒兽",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -801,11 +802,9 @@ let meng_du_shou = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-
-
-let teng_yao = {
+"藤妖": {
     name: "藤妖",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
@@ -839,9 +838,9 @@ let teng_yao = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let dao_nu = {
+"刀奴": {
     name: "刀奴",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -875,9 +874,9 @@ let dao_nu = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let dian_jiao = {
+"电蛟": {
     name: "电蛟",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -911,9 +910,9 @@ let dian_jiao = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let luo_han = {
+"罗汉": {
     name: "罗汉",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -947,9 +946,9 @@ let luo_han = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let tou_shi_che = {
+"投石车": {
     name: "投石车",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -983,9 +982,9 @@ let tou_shi_che = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let motor_bing = {
+"摩托骑兵": {
     name: "摩托骑兵",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1019,9 +1018,9 @@ let motor_bing = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let hong_zha_ji = {
+"轰炸机": {
     name: "轰炸机",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1055,9 +1054,9 @@ let hong_zha_ji = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let repair_ji = {
+"维修机": {
     name: "维修机",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1091,9 +1090,9 @@ let repair_ji = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let te_zhong_bing = {
+"特种兵": {
     name: "特种兵",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1127,9 +1126,9 @@ let te_zhong_bing = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let ghost_ji = {
+"幽灵机": {
     name: "幽灵机",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1163,9 +1162,9 @@ let ghost_ji = {
             health_recovery: [5, 5, 5]			// 生命恢复
         }
     }
-};
+},
 
-let gui_lang = {
+"鬼狼": {
     name: "鬼狼",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1200,9 +1199,9 @@ let gui_lang = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let spider = {
+"蜘蛛": {
     name: "蜘蛛",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1236,9 +1235,9 @@ let spider = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let bian_fu = {
+"蝙蝠": {
     name: "蝙蝠",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1272,9 +1271,9 @@ let bian_fu = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let blood_eagle = {
+"血鹰": {
     name: "血鹰",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1309,9 +1308,9 @@ let blood_eagle = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let ren_zhe_panda = {
+"忍者熊猫": {
     name: "忍者熊猫",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1345,9 +1344,9 @@ let ren_zhe_panda = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let kuang_lion = {
+"狂狮": {
     name: "狂狮",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1381,9 +1380,9 @@ let kuang_lion = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let bu_si_bird = {
+"不死鸟": {
     name: "不死鸟",								// 名称
     cost: 3,									// 花费
     image: [									// 图片
@@ -1417,9 +1416,9 @@ let bu_si_bird = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let dun_nu = {
+"盾奴": {
     name: "盾奴",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1453,9 +1452,9 @@ let dun_nu = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let xiang_long = {
+"翔龙": {
     name: "翔龙",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1490,9 +1489,9 @@ let xiang_long = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let xu_mi_sha = {
+"须弥鲨": {
     name: "须弥鲨",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1527,9 +1526,9 @@ let xu_mi_sha = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let gun_nu = {
+"棍奴": {
     name: "棍奴",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1563,9 +1562,9 @@ let gun_nu = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let tou_dan_shou = {
+"投弹手": {
     name: "投弹手",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1599,10 +1598,10 @@ let tou_dan_shou = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
 
-let tie_ji = {
+"铁鸡": {
     name: "铁鸡",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1636,9 +1635,9 @@ let tie_ji = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let fang_zhou = {
+"方舟": {
     name: "方舟",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1672,9 +1671,9 @@ let fang_zhou = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let chang_sheng_lu = {
+"长生鹿": {
     name: "长生鹿",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1708,9 +1707,9 @@ let chang_sheng_lu = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let kill_bee = {
+"杀人蜂": {
     name: "杀人蜂",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1744,9 +1743,9 @@ let kill_bee = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let gu_long = {
+"骨龙": {
     name: "骨龙",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1781,9 +1780,9 @@ let gu_long = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let chan_shi_panda = {
+"禅师熊猫": {
     name: "禅师熊猫",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
@@ -1817,9 +1816,9 @@ let chan_shi_panda = {
             health_recovery: [5, 5, 5]			// 生命恢复
         }
     }
-};
+},
 
-let huan_jing = {
+"幻鲸": {
     name: "幻鲸",								// 名称
     cost: 5,									// 花费
     image: [									// 图片
@@ -1853,10 +1852,10 @@ let huan_jing = {
             health_recovery: [5, 5, 5]			// 生命恢复
         }
     }
-};
+},
 
 
-let tie_ju_shen = {
+"铁巨神": {
     name: "铁巨神",								// 名称
     cost: 5,									// 花费
     image: [									// 图片
@@ -1890,9 +1889,9 @@ let tie_ju_shen = {
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
-};
+},
 
-let fly_ha_ma = {
+"飞天蛤蟆": {
     name: "飞天蛤蟆",								// 名称
     cost: 5,									// 花费
     image: [									// 图片
@@ -1927,9 +1926,9 @@ let fly_ha_ma = {
             health_recovery: [5, 5, 5]			// 生命恢复
         }
     }
-};
+},
 
-let tree_yao = {
+"树妖": {
     name: "树妖",								// 名称
     cost: 5,									// 花费
     image: [									// 图片
@@ -1963,4 +1962,5 @@ let tree_yao = {
             health_recovery: [5, 5, 5]			// 生命恢复
         }
     }
-};
+}
+}
