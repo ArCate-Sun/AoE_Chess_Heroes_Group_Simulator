@@ -1532,7 +1532,7 @@ obj={
     name: "棍奴",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
-        "pictures/须弥鲨.jpg"
+        "pictures/棍奴.jpg"
     ],
     feature: [									// 特征
         "后期CARRY"

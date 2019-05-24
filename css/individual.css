@@ -1,0 +1,84 @@
+body{
+	text-align: center;
+	font-family: PingFangSC-Medium, sans-serif;;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	background-color: #F7F7F7;
+}
+
+#showImg{
+	display: inline-block;
+	vertical-align: top:
+}
+
+#descriptionAll{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	word-wrap: break-word;
+    word-break: normal;
+	width: 500px;
+	margin-left: 20px;
+}
+
+#card{
+	margin: 0 auto;
+	border-radius: 10px;
+	width: 800px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+th{
+	width: 70px;
+	text-align: left;
+}
+
+.tabs {
+  width: 480px;
+  background-color: #FFF;
+  box-sizing: border-box;
+}
+
+.tabs nav {
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #000;
+  /* 伸缩盒模型 */
+  display: flex;
+}
+
+nav a {
+  display: block;
+  width: 160px;
+  border-right: 1px solid #FFF;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 28px;
+  vertical-align: center;
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+nav a.active {
+  background-color: #DDD;
+}
+
+.cont {
+  overflow: hidden;
+  display: none;
+  height: 365px;
+  background-color: #EEE;
+}
+
+.cont ol {
+  line-height: 30px;
+  padding-left: 20px;
+}
+li{
+	list-style-type: none;	
+}
