@@ -87,7 +87,7 @@ let tian_shi = {
         "爆破"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "天师发出雷暴球，对路径上的敌人造成技能伤害，且减少被伤害的目标20点能量。",		// 技能描述
         damage: [150, 200, 250]					// 技能伤害
     },
     property: {									// 兵种属性
@@ -160,7 +160,7 @@ let jun_yi = {
         "支援"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "对小范围内的队友进行多次治疗。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
@@ -189,8 +189,7 @@ let niao_qi_bing = {
         "pictures/鸟骑兵.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害",
-        "技能伤害"
+        "普攻伤害"
     ],
     nature: [									// 连携
         "骑兵",
@@ -233,7 +232,7 @@ let tie_gou = {
         "爆破"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "铁狗在接下来的一段时间内同时使用机枪和导弹进行攻击，导弹造成伤害同时会造成短暂眩晕。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
@@ -247,7 +246,7 @@ let tie_gou = {
         },
         defense: {								// 防御
             health: [700, 1400, 2800],			// 生命
-            Armor: [5, 5, 5],					// 护甲
+            Armor: [5, 7, 9],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
             health_recovery: [0, 0, 0]			// 生命恢复
@@ -263,15 +262,14 @@ let yan_chong = {
         "pictures/眼虫.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害",
-        "技能伤害"
+        "单体控制"
     ],
     nature: [									// 连携
         "异虫",
         "异能"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "附身一个敌人，使其无法行动，持续一段时间。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
@@ -309,7 +307,7 @@ let chuan_shan_jia = {
         "刺杀"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "钻入地下后突袭敌人，造成技能伤害并击飞敌人。",		// 技能描述
         damage: [100, 200, 300]					// 技能伤害
     },
     property: {									// 兵种属性
@@ -345,13 +343,13 @@ let wu_seng_panda= {
         "先锋"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "武僧熊猫长啸一声，进入无式状态，普通攻击可以攻击到最多三个敌人，同时增加自身护甲值并嘲讽周围敌人。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [61, 123, 246],			// 最小攻击
+            max_damage: [67, 135, 271],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -386,8 +384,8 @@ let ju_chi_xiang = {
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [34, 161, 323],			// 最小攻击
-            max_damage: [58, 226, 452],		// 最大攻击
+            min_damage: [34, 69, 139],			// 最小攻击
+            max_damage: [58, 116, 232],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -414,17 +412,17 @@ let zhen_ren = {
     ],
     nature: [									// 连携
         "灵能者",
-        "傀儡"，
+        "傀儡",
 		"召唤",
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "真人召唤一个侍卫的幻想来为其作战。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [41, 83, 167],			// 最小攻击
+            max_damage: [46, 92, 185],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -456,13 +454,13 @@ let ling_jiu = {
         "刺杀"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
+        description: "灵鹫发出特殊的音波，对周围圆形区域内的敌人造成技能伤害",		// 技能描述
+        damage: [200, 300, 400]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [96, 161, 323],			// 最小攻击
-            max_damage: [105, 226, 452],		// 最大攻击
+            min_damage: [96, 192, 385],			// 最小攻击
+            max_damage: [105, 210, 420],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -493,13 +491,13 @@ let lei_zhen_zi = {
         "狙击"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "蕾站在撞击雷锤产生锁链电流，使其在周围的敌人之间弹射，每次弹射伤害衰减40%",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [61, 123, 246],			// 最小攻击
+            max_damage: [73, 147, 295],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -530,13 +528,13 @@ let jin_gang = {
         "护卫"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "金刚爆掉自己的炎狱护甲，使自己附带吸血效果，并对周围圆形区域内的敌人造成技能伤害，且降低敌人的攻击速度",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 180],			// 最小攻击
-            max_damage: [113, 226, 270],		// 最大攻击
+            min_damage: [45, 90, 180],			// 最小攻击
+            max_damage: [67, 135, 270],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -566,13 +564,13 @@ let jian_nu = {
         "先锋"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "剑奴舞动双刀攻击敌人，对周围圆形区域内的敌人造成6次技能伤害，技能持续期间，剑奴免疫石化，眩晕和技能伤害。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [76, 153, 307],			// 最小攻击
+            max_damage: [82, 165, 330],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -602,13 +600,13 @@ let kong_xie = {
         "攻城"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "空蟹发射极光电影，对前方单体敌人造成技能伤害；每次释放技能后，将增加自身25%的攻速，最多可叠加3层。",		// 技能描述
         damage: [575, 825, 1075]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [46, 93, 187],			// 最小攻击
+            max_damage: [51, 103, 206],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -643,8 +641,8 @@ let tie_yuan = {
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 267],			// 最小攻击
-            max_damage: [113, 226, 291],		// 最大攻击
+            min_damage: [66, 133, 267],			// 最小攻击
+            max_damage: [72, 291, 291],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -675,13 +673,13 @@ let fire_bing = {
         "先锋"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "火焰兵对前方半径15，顶角135度范围内的敌人造成伤害，总共攻击4次",		// 技能描述
         damage: [120, 200, 280]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [70, 141, 283],			// 最小攻击
+            max_damage: [82, 165, 330],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -711,13 +709,13 @@ let hu_dun_bing = {
         "护卫"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "护盾兵启动反重力装置，快速跳跃到敌人面前，对敌人造成随机伤害和眩晕。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
             min_damage: [30, 61, 123],			// 最小攻击
-            max_damage: [84, 169, 328],		// 最大攻击
+            max_damage: [84, 169, 338],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -747,20 +745,20 @@ let bao_lie_chong = {
         "爆破"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "死亡时周围圆形区域内的敌人造成技能伤害。",		// 技能描述
         damage: [200, 300, 400]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [38, 83, 167],			// 最小攻击
+            max_damage: [42, 92, 185],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
         },
         defense: {								// 防御
-            health: [500, 1000, 2000],			// 生命
+            health: [500, 1000, 1900],			// 生命
             Armor: [0, 0, 0],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
@@ -776,21 +774,20 @@ let meng_du_shou = {
         "pictures/猛毒兽.jpg",
     ],
     feature: [									// 特征
-        "普攻伤害",
-        "后期carry"
+        "承受伤害"
     ],
     nature: [									// 连携
         "野兽",
         "先锋"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "对敌人吐出腐蚀毒液，削减单个敌人护甲，持续一段时间。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [87, 175, 350],			// 最小攻击
+            max_damage: [125, 250, 500],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -806,42 +803,7 @@ let meng_du_shou = {
     }
 };
 
-let lei_zhen_zi = {
-    name: "雷震子",								// 名称
-    cost: 2,									// 花费
-    image: [									// 图片
-        "pictures/雷震子.jpg",
-    ],
-    feature: [									// 特征
-        "普攻伤害",
-        "后期carry"
-    ],
-    nature: [									// 连携
-        "灵能者",
-        "狙击"
-    ],
-    ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
-    },
-    property: {									// 兵种属性
-        attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
-            reduce_armor: [0, 0, 0],			// 护甲削弱
-            ability_damage: [0, 0, 0],			// 技能伤害 (%)
-            critical_strike: [0, 0, 0],			// 暴击 (%)
-            blood_sucking: [0, 0, 0],			// 吸血 (%)
-        },
-        defense: {								// 防御
-            health: [500, 1000, 2000],			// 生命
-            Armor: [5, 5, 5],					// 护甲
-            ability_defense: [0, 0, 0],			// 技能防御
-            miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
-        }
-    }
-};
+
 
 let teng_yao = {
     name: "藤妖",								// 名称
@@ -850,15 +812,14 @@ let teng_yao = {
         "pictures/藤妖.jpg",
     ],
     feature: [									// 特征
-        "普攻伤害",
-        "后期carry"
+        "单体控制"
     ],
     nature: [									// 连携
         "不朽者",
         "异能"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "将根系扎入地下，召唤起能量藤蔓束缚单个敌人，造成多段技能伤害同时治疗自己，持续一段时间。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
@@ -894,13 +855,13 @@ let dao_nu = {
         "先锋"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "刀奴普攻有10%的概率触发暴击伤害。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [75, 151, 300],			// 最小攻击
+            max_damage: [97, 195, 390],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -930,13 +891,13 @@ let dian_jiao = {
         "异能"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "电蛟对周围圆形区域内多名敌人进行电磁连线，造成2次技能伤害；敌人离电蛟越远，伤害越高。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [95, 190, 381],			// 最小攻击
+            max_damage: [114, 229, 458],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -966,13 +927,13 @@ let luo_han = {
         "狙击"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "罗汉引导自身晶核的能量到掌中，对前方敌人造成技能伤害。",		// 技能描述
         damage: [250, 450, 650]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [153, 306, 613],			// 最小攻击
+            max_damage: [166, 332, 664],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -995,20 +956,20 @@ let tou_shi_che = {
         "pictures/投石车.jpg",
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "后期CARRY"
     ],
     nature: [									// 连携
         "装甲",
         "攻城"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "投石车架起，提升攻击速度，攻击变为范围攻击，可以攻击目标及其相邻的单位。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [41, 83, 166],			// 最小攻击
+            max_damage: [50, 100, 200],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1038,13 +999,13 @@ let motor_bing = {
         "爆破"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "摩托连续射出3发威力巨大的子弹，造成大量伤害。",		// 技能描述
         damage: [200, 300, 400]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [46, 93, 187],			// 最小攻击
+            max_damage: [51, 103, 206],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1074,13 +1035,13 @@ let hong_zha_ji = {
         "爆破"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
+        description: "轰炸机对目标区域进行连续宏站，对半径7的圆形区域内造成对此伤害，轰炸期间提升自身50点护甲。",		// 技能描述
+        damage: [300, 450, 600]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [41, 82, 166],			// 最小攻击
+            max_damage: [46, 92, 184],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1110,13 +1071,13 @@ let repair_ji = {
         "支援"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "工程机持续强化一个距离自己最远的友军，大幅提升其攻击力，仅能伤害，友军被强化期间不会死亡。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [83, 161, 323],			// 最小攻击
-            max_damage: [100, 226, 452],		// 最大攻击
+            min_damage: [83, 166, 333],			// 最小攻击
+            max_damage: [100, 200, 400],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1146,13 +1107,13 @@ let te_zhong_bing = {
         "狙击"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "特种兵经过短暂瞄准发出致命子弹，造成大量伤害",		// 技能描述
         damage: [400, 600, 800]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [97, 195, 390],			// 最小攻击
+            max_damage: [127, 255, 510],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1182,13 +1143,13 @@ let ghost_ji = {
         "刺杀"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "幽灵机进入隐形状态，敌人无法对其进行攻击，隐形期间会逐渐恢复生命并增加攻速。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [55, 110, 220],			// 最小攻击
+            max_damage: [66, 132, 264],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1211,20 +1172,21 @@ let gui_lang = {
         "pictures/鬼狼.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "承受伤害",
+        "召唤生物"
     ],
     nature: [									// 连携
         "野兽",
         "召唤"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "狼人释放自己真正的力量，提升自己生命值并召唤小狼。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 309],			// 最小攻击
-            max_damage: [113, 226, 370],		// 最大攻击
+            min_damage: [59, 154, 309],			// 最小攻击
+            max_damage: [70, 185, 370],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1247,20 +1209,20 @@ let spider = {
         "pictures/蜘蛛.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "单体控制"
     ],
     nature: [									// 连携
         "异虫",
         "异能"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "吐出带有魅惑毒液的蛛丝，随机选取一名敌人暂时变为己方单位，提升攻击力并获得短暂嘲讽。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [68, 137, 275],			// 最小攻击
+            max_damage: [75, 151, 302],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1290,13 +1252,13 @@ let bian_fu = {
         "狙击"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "召唤小蝙蝠残影盘旋在敌人头顶，造成技能伤害同时减少其攻击速度，持续一段时间。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [95, 210, 420],			// 最小攻击
+            max_damage: [114, 252, 504],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1305,8 +1267,8 @@ let bian_fu = {
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
             Armor: [5, 5, 5],					// 护甲
-            ability_defense: [0, 0, 0],			// 技能防御
-            miss: [20, 20, 20],					// 闪避 (%)
+            ability_defense: [20, 20, 20],		// 技能防御（%）
+            miss: [0, 0, 0],					// 闪避 (%)
             health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
@@ -1327,13 +1289,13 @@ let blood_eagle = {
 		"先锋"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "从空中降落到地面，落地过程中获得短暂无敌，生命值恢复至最大值并提升攻击力，由单词远程攻击变为三段近战攻击。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [50, 100, 200],			// 最小攻击
+            max_damage: [70, 140, 280],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1359,17 +1321,17 @@ let ren_zhe_panda = {
         "技能伤害"
     ],
     nature: [									// 连携
-        "傀儡",
-        "先锋"
+        "熊猫",
+        "刺杀"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "扔出一个可以持续造成伤害的巨大飞镖，造成技能伤害，持续一段时间。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [60, 120, 240],			// 最小攻击
+            max_damage: [72, 144, 288],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1399,13 +1361,13 @@ let kuang_lion = {
         "护卫"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "对前方扇形内的多个敌人咆哮，石化他们并造成少量伤害同时减少他们攻击力，并赋予自身伤害反弹，持续一段时间。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [45, 91, 182],			// 最小攻击
+            max_damage: [54, 109, 218],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1428,20 +1390,20 @@ let bu_si_bird = {
         "pictures/不死鸟.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "技能伤害"
     ],
     nature: [									// 连携
         "猛禽",
         "爆破"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "朝目标所在的矩形区域喷射不死烈焰，这些高温火焰会在目标区域造成多次伤害，持续一段时间。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [101, 203, 407],			// 最小攻击
+            max_damage: [116, 232, 465],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1464,7 +1426,7 @@ let dun_nu = {
         "pictures/盾奴.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "承受伤害"
     ],
     nature: [									// 连携
         "傀儡",
@@ -1476,8 +1438,8 @@ let dun_nu = {
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [101, 203, 406],			// 最小攻击
+            max_damage: [110, 221, 443],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1500,20 +1462,21 @@ let xiang_long = {
         "pictures/盾奴.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "技能伤害",
+        "群体控制"
     ],
     nature: [									// 连携
         "陆行者",
         "攻城"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "翔龙召唤龙卷风，被龙卷风命中的敌人将受到技能伤害，并击飞，落地后产生额外的眩晕效果。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [85, 170, 340],			// 最小攻击
+            max_damage: [102, 204, 408],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1544,20 +1507,20 @@ let xu_mi_sha = {
 		"召唤"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "须弥鲨召唤神国之门，盾奴从神国之门穿越为须弥鲨二战。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [88, 176, 353],			// 最小攻击
+            max_damage: [106, 212, 424],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
         },
         defense: {								// 防御
-            health: [1050, 2100, 4200],			// 生命
+            health: [800, 1600, 3000],			// 生命
             Armor: [5, 5, 5],					// 护甲
             ability_defense: [20, 20, 20],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
@@ -1573,20 +1536,20 @@ let gun_nu = {
         "pictures/须弥鲨.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "后期CARRY"
     ],
     nature: [									// 连携
         "傀儡",
         "护卫"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "当棍奴持续攻击同一个目标时，将会获得额外的攻速加成，且加成效果达到10层是，棍奴会切换攻击动作；一旦棍奴改变了攻击目标，攻速加成效果将被清除。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [98, 196, 392],			// 最小攻击
+            max_damage: [109, 218, 436],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1609,27 +1572,27 @@ let tou_dan_shou = {
         "pictures/投弹手.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "群体控制"
     ],
     nature: [									// 连携
         "步兵",
         "异能"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "投弹手扔出手榴弹造成一片磁暴区域，区域内的敌人会持续受到伤害并无法使用手动技能。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [45, 90, 180],			// 最小攻击
+            max_damage: [50, 100, 200],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
         },
         defense: {								// 防御
-            health: [750, 1400, 2800],			// 生命
+            health: [700, 1400, 2800],			// 生命
             Armor: [5, 5, 5],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
@@ -1649,18 +1612,17 @@ let tie_ji = {
         "普攻伤害"
     ],
     nature: [									// 连携
-        "傀儡",
-        "海神",
-		"召唤"
+        "装甲",
+        "刺杀"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "强袭铁鸡展庇护屏障，增加一定的攻击力和防御力",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [90, 180, 323],			// 最小攻击
+            max_damage: [110, 220, 452],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1683,20 +1645,20 @@ let fang_zhou = {
         "pictures/方舟.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "技能伤害"
     ],
     nature: [									// 连携
         "空军",
         "攻城"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
+        description: "聚能方舟指挥机群轰炸指定区域，对路径上的敌人造成伤害",		// 技能描述
+        damage: [250, 400, 550]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [30, 61, 122],			// 最小攻击
+            max_damage: [34, 68, 137],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1719,20 +1681,20 @@ let chang_sheng_lu = {
         "pictures/长生鹿.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "团队辅助"
     ],
     nature: [									// 连携
         "野兽",
         "支援"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "发射一道蕴含了声明能量涉嫌，连接多位队友同时治疗他们",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [79, 183, 316],			// 最小攻击
+            max_damage: [95, 220, 380],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1755,20 +1717,20 @@ let kill_bee = {
         "pictures/杀人蜂.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "技能伤害"
     ],
     nature: [									// 连携
         "异虫",
         "狙击"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "喷射出幼虫在周围敌人造成两次技能伤害，两次伤害一致，效果范围分为外环和内环。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [29, 59, 118],			// 最小攻击
+            max_damage: [33, 67, 135],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1791,7 +1753,7 @@ let gu_long = {
         "pictures/骨龙.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "群体控制"
     ],
     nature: [									// 连携
         "猛禽",
@@ -1799,13 +1761,13 @@ let gu_long = {
 		"攻城"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
+        description: "吐出一枚巨大的骨球，对目标圆形区域内的敌人造成技能伤害并眩晕。",		// 技能描述
+        damage: [150, 250, 350]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [117, 235, 471],			// 最小攻击
+            max_damage: [141, 282, 565],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1828,31 +1790,31 @@ let chan_shi_panda = {
         "pictures/禅师熊猫.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "技能伤害"
     ],
     nature: [									// 连携
         "熊猫",
         "异能"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "禅师展示出真正的气功力量，在前方凝聚出一个巨大的秘法球，对秘法球周遭的单位造成技能伤害并减少其能量。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [56, 112, 224],			// 最小攻击
+            max_damage: [63, 133, 252],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
         },
         defense: {								// 防御
-            health: [450, 900, 1800],			// 生命
+            health: [850, 1700, 3400],			// 生命
             Armor: [5, 5, 5],					// 护甲
             ability_defense: [20, 20, 20],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
+            health_recovery: [5, 5, 5]			// 生命恢复
         }
     }
 };
@@ -1871,13 +1833,13 @@ let huan_jing = {
         "攻城"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "幻鲸在前方区域召唤虚无的幻象，每秒对周围圆形区域内的敌人造成技能伤害。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [63, 126, 252],			// 最小攻击
+            max_damage: [77, 154, 308],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1901,27 +1863,27 @@ let tie_ju_shen = {
         "pictures/铁巨神.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "技能伤害"
     ],
     nature: [									// 连携
         "装甲",
         "爆破"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
+        description: "铁巨神使用主炮攻击，对范围内敌人造成多次伤害。",		// 技能描述
+        damage: [400, 600, 800]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [100, 200, 400],			// 最小攻击
+            max_damage: [105, 213, 480],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
         },
         defense: {								// 防御
-            health: [900, 1800, 3800],			// 生命
+            health: [900, 1800, 3600],			// 生命
             Armor: [15, 15, 15],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
@@ -1937,20 +1899,21 @@ let fly_ha_ma = {
         "pictures/飞天蛤蟆.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "技能伤害",
+        "单体控制"
     ],
     nature: [									// 连携
         "猛禽",
         "异能"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
+        description: "随机对一名敌人尝试吞食，弱小的敌人将会被直接吃掉。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [80, 161, 323],			// 最小攻击
-            max_damage: [113, 226, 452],		// 最大攻击
+            min_damage: [48, 96, 192],			// 最小攻击
+            max_damage: [58, 117, 234],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1973,15 +1936,15 @@ let tree_yao = {
         "pictures/树妖.jpg"
     ],
     feature: [									// 特征
-        "普攻伤害"
+        "群体控制"
     ],
     nature: [									// 连携
         "不朽者",
         "先锋"
     ],
     ability: {									// 技能
-        description: "斧奴扔出手中的灵刃, 对单个敌人造成技能伤害, 且使其短暂眩晕.",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
+        description: "对周围圆形范围内的敌人造成技能伤害，并击飞他们。",		// 技能描述
+        damage: [150, 250, 350]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
