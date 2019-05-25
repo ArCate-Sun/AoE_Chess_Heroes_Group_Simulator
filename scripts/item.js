@@ -25,6 +25,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.8
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -61,6 +62,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.7
         },
         defense: {								// 防御
             health: [500, 1000, 2800],			// 生命
@@ -99,6 +101,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.1
         },
         defense: {								// 防御
             health: [400, 800, 1500],			// 生命
@@ -135,6 +138,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.0
         },
         defense: {								// 防御
             health: [400, 800, 1600],			// 生命
@@ -172,6 +176,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.0
         },
         defense: {								// 防御
             health: [400, 800, 1500],			// 生命
@@ -208,6 +213,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [400, 800, 1600],			// 生命
@@ -244,6 +250,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.0
         },
         defense: {								// 防御
             health: [700, 1400, 2800],			// 生命
@@ -281,6 +288,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
         },
         defense: {								// 防御
             health: [500, 1000, 1900],			// 生命
@@ -319,6 +327,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
         },
         defense: {								// 防御
             health: [650, 1300, 2600],			// 生命
@@ -355,6 +364,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.8
         },
         defense: {								// 防御
             health: [700, 1400, 2800],			// 生命
@@ -391,6 +401,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [650, 1300, 2600],			// 生命
@@ -428,6 +439,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [500, 1000, 1900],			// 生命
@@ -466,6 +478,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.0
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -503,6 +516,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.6
         },
         defense: {								// 防御
             health: [500, 1000, 2000],			// 生命
@@ -540,6 +554,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
         },
         defense: {								// 防御
             health: [650, 1300, 2300],			// 生命
@@ -576,6 +591,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [600, 1200, 2400],			// 生命
@@ -612,6 +628,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -648,6 +665,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.7
         },
         defense: {								// 防御
             health: [800, 1600, 3200],			// 生命
@@ -685,6 +703,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [600, 1200, 2400],			// 生命
@@ -721,6 +740,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.0
         },
         defense: {								// 防御
             health: [750, 1500, 3000],			// 生命
@@ -757,6 +777,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [500, 1000, 1900],			// 生命
@@ -793,6 +814,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
         },
         defense: {								// 防御
             health: [650, 1300, 2600],			// 生命
@@ -829,6 +851,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.7
         },
         defense: {								// 防御
             health: [500, 1300, 2600],			// 生命
@@ -865,6 +888,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.6
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -901,6 +925,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.0
         },
         defense: {								// 防御
             health: [750, 1500, 3000],			// 生命
@@ -937,6 +962,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.2
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -973,6 +999,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.0
         },
         defense: {								// 防御
             health: [800, 1600, 3200],			// 生命
@@ -1009,6 +1036,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -1045,6 +1073,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.0
         },
         defense: {								// 防御
             health: [400, 800, 1600],			// 生命
@@ -1081,6 +1110,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.0
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -1117,6 +1147,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.7
         },
         defense: {								// 防御
             health: [450, 900, 1800],			// 生命
@@ -1153,6 +1184,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.1
         },
         defense: {								// 防御
             health: [500, 1000, 2000],			// 生命
@@ -1190,6 +1222,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [750, 1500, 3000],			// 生命
@@ -1226,6 +1259,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.2
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -1262,6 +1296,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.8
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -1299,6 +1334,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.3
         },
         defense: {								// 防御
             health: [650, 1300, 2600],			// 生命
@@ -1335,6 +1371,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [550, 1100, 2200],			// 生命
@@ -1371,6 +1408,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
         },
         defense: {								// 防御
             health: [700, 1400, 2800],			// 生命
@@ -1407,6 +1445,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.6
         },
         defense: {								// 防御
             health: [450, 900, 1800],			// 生命
@@ -1443,6 +1482,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [1050, 2100, 4200],			// 生命
@@ -1480,6 +1520,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.7
         },
         defense: {								// 防御
             health: [750, 1500, 3000],			// 生命
@@ -1517,6 +1558,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.2
         },
         defense: {								// 防御
             health: [800, 1600, 3000],			// 生命
@@ -1553,6 +1595,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [900, 1800, 3600],			// 生命
@@ -1589,6 +1632,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
         },
         defense: {								// 防御
             health: [700, 1400, 2800],			// 生命
@@ -1626,6 +1670,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [750, 1500, 3000],			// 生命
@@ -1662,6 +1707,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.2
         },
         defense: {								// 防御
             health: [650, 1300, 2600],			// 生命
@@ -1698,6 +1744,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.8
         },
         defense: {								// 防御
             health: [850, 1700, 3400],			// 生命
@@ -1734,6 +1781,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.3
         },
         defense: {								// 防御
             health: [450, 900, 1800],			// 生命
@@ -1771,6 +1819,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.2
         },
         defense: {								// 防御
             health: [950, 1900, 3800],			// 生命
@@ -1807,6 +1856,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.0
         },
         defense: {								// 防御
             health: [850, 1700, 3400],			// 生命
@@ -1843,6 +1893,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.0
         },
         defense: {								// 防御
             health: [1000, 2000, 4000],			// 生命
@@ -1880,6 +1931,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.8
         },
         defense: {								// 防御
             health: [900, 1800, 3600],			// 生命
@@ -1917,6 +1969,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.6
         },
         defense: {								// 防御
             health: [1000, 2000, 4000],			// 生命
@@ -1953,6 +2006,7 @@ obj={
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
             blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.7
         },
         defense: {								// 防御
             health: [950, 1900, 3800],			// 生命
