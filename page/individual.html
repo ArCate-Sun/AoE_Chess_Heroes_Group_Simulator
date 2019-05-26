@@ -2,49 +2,7 @@
     <head>
         <meta charset="utf-8">
         <script type="text/javascript" src="../scripts/item.js"></script>		
-        <script>
-		window.onload=function(){				
-			//process data
-			name = "铁巨神";
-			color = new Array("#DDDDDD", "#CCCCFF", "#7744FF", "#A500CC", "#FF8800");
-			document.getElementsByTagName("nav")[0].style.background = color[obj[name].cost-1];
-			document.getElementById("card").style.border = "5px groove" + color[obj[name].cost-1];
-			document.querySelector(".tabs").style.border = "2px dotted " + color[obj[name].cost-1];
-			var imgLabel = document.getElementById("figure");
-			imgLabel.alt = name;
-			imgLabel.src = "../" + obj[name].image[0];
-			document.getElementById("detail").innerHTML = obj[name].ability.description;
-			var property = document.getElementsByName("property");
-			for(var i=0;i<obj[name].nature.length;i++)
-				property[i].innerHTML = obj[name].nature[i];
-			index = 0;
-			updateData();
-		}
-		updateData=function(){
-			document.getElementById("minAttack").innerHTML = obj[name].property.attack.min_damage[index];
-			document.getElementById("maxAttack").innerHTML = obj[name].property.attack.max_damage[index];
-			document.getElementById("blood").innerHTML = obj[name].property.defense.health[index];
-			document.getElementById("armor").innerHTML = obj[name].property.defense.Armor[index];
-			document.getElementById("skillDefense").innerHTML = obj[name].property.defense.ability_defense[index] + "%";
-			document.getElementById("bloodRetrieve").innerHTML = obj[name].property.defense.health_recovery[index];
-			document.getElementById("attackSpeed").innerHTML = obj[name].property.attack.speed;
-		}
-		
-		change=function(value){			
-			if (value.id == "1")				
-				index = 0			
-			if (value.id == "2")
-				index = 1;
-			if (value.id == "3")
-				index = 2;			
-			var active = document.querySelector(".active");
-			active.classList.remove("active");				
-			value.classList.add("active");			
-			updateData();
-			//document.getElementsByClassName("active")[0].style.cssText = "background-color: " + color[obj[name].cost-1];
-		}
-        </script>		
-		
+        <script type="text/javascript" src="../scripts/individual.js"></script>		
 		<link rel="stylesheet" type="text/css" href="../css/individual.css">
     </head>
     <body>
@@ -69,11 +27,11 @@
 						</table></li>
 						<li>最小攻击：<span id="minAttack"></span</li>
 						<li>最大攻击：<span id="maxAttack"></span</li>
+						<li>攻击速度：<span id="attackSpeed"></span></li>
 						<li>生命：<span id="blood"></span></li>
 						<li>护甲：<span id="armor"></span></li>
 						<li>技能防御：<span id="skillDefense"></span></li>
-						<li>生命回复：<span id="bloodRetrieve"></span></li>
-						<li>攻击速度：<span id="attackSpeed"></span></li>
+						<li>生命回复：<span id="bloodRetrieve"></span></li>						
 					</ol>
 				</div>				
 

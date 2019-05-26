@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="../scripts/item.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <script type="text/javascript" src="../scripts/group.js"></script>
+        <script>
+
+            window.onload = function(){
+                createSelector();
+                createTable(9, 6, obj);
+            }
+            
+            function getJsonLength(jsonData){
+            // compute the length of json data
+                var jsonLength = 0;
+                for(var item in jsonData)
+                    jsonLength++;
+                return jsonLength;
+            }
+
+            function clickImg(value){
+                // jump to the individual page when click on the img.
+                var url =  "individual.html?name=" + encodeURI(value.alt);
+                location.href = url;
+            }
+
+            function updateImg(){
+                //response to the radio change event
+                //remove old information
+                var body = document.getElementById("main_part");
+                var table = document.getElementById("table");
+                body.removeChild(table);
+                //get the radio selection
+                var abilityInput = document.getElementsByName("ability");
+                var nationInput = document.getElementsByName("nation");
+                var abilityName = "";
+                var nationName = "";
+                for(var i=0; i<abilityInput.length;i++ )
+                {
+                    if (abilityInput[i].checked)
+                        abilityName = abilityInput[i].value;
+                }                
+                for(var i=0;i<nationInput.length; i++)
+                {
+                    if (nationInput[i].checked)
+                        nationName = nationInput[i].value;
+                }
+                if(nationName == "全部" && abilityName =="全部")    {
+                    createTable(9, 6, obj);
+                    return;
+                }           
+                var jsonTemp = {};
+                for(var card in obj){
+                    if(nationName == "全部")
+                    {
+                        var count = obj[card].nature.length;
+                        for(var j=0;j<count;j++)
+                            if(obj[card].nature[j] == abilityName)
+                                jsonTemp[card] = obj[card];
+                    }
+                    else if(abilityName =="全部")
+                    {
+                        var count = obj[card].nature.length;
+                        for(var j=0;j<count;j++)
+                            if(obj[card].nature[j] == nationName)
+                                jsonTemp[card] = obj[card];
+                    }
+                    else{
+                        var count = obj[card].nature.length;
+                        var number = 0;
+                        for(var j=0;j<count;j++)
+                            if(obj[card].nature[j] == nationName || obj[card].nature[j] == abilityName)
+                            {
+                                number += 1
+                            }
+                        if(number == 2)
+                            jsonTemp[card] = obj[card];
+                    }
+                }
+                var numberLines = Math.ceil(getJsonLength(jsonTemp) / 6);
+                createTable(numberLines, 6, jsonTemp);              
+            }
+
+            function addRadio(root, name, value, checked){
+                // add radio box to the top bar
+                var label = document.createElement("label");
+                var input = document.createElement("input");
+                input.type = "radio";
+                input.value = value;
+                input.name = name;    
+                input.checked = checked;
+                input.onchange = function(){updateImg();};
+                label.innerHTML = value;
+                root.appendChild(input);
+                root.appendChild(label);
+            }
+
+            function createSelector(){
+                // create selector
+                ability = document.getElementById("ability");
+                addRadio(ability, "ability", "全部", "checked");
+                for(var i=0;i<13;i++)
+                    addRadio(ability, "ability", group[i].name, "");                 
+                nation = document.getElementById("nation");
+                addRadio(nation, "nation", "全部", "checked");
+                for(var i=13;i<22;i++)
+                    addRadio(nation, "nation", group[i].name, "");
+            }
+
+            function createTable(rows, lines, item){
+                // create table to show image of cards.
+                this.rows=rows;
+                this.lines=lines;
+                var Body = document.getElementById('main_part');
+                var Table = document.createElement('table');
+                Table.id = "table";
+                Table.cellSpacing = "10";
+                Table.align = "left";
+                Table.setAttribute('border','1'); 
+                var size = getJsonLength(item);
+                var keys = new Array(size);
+                var count = 0;
+                for(var k in item){
+                    keys[count] = k;
+                    count += 1;
+                }
+                for(var i=0; i<this.rows; i++){
+                    var lRow=document.createElement('tr');
+                    for(var j=0; j<this.lines; j++){                  
+                        var index = i*6+j;
+                        if(index<size){
+                            var textNode = document.createElement("img"); 
+                            textNode.src = "../" + item[keys[index]].image[0]; 
+                            textNode.alt = keys[index];
+                            textNode.style.width = "120px";                                         
+                            var lLine = document.createElement('td');
+                            lLine.appendChild(textNode);
+                            lRow.appendChild(lLine);
+                        }
+                    }
+                    Table.appendChild(lRow);
+                }               
+                Body.appendChild(Table);     
+                var imgLabel = document.getElementsByTagName("img")
+                for (var i=0;i<imgLabel.length;i++){
+                    imgLabel[i].onclick = function(){clickImg(this);};
+                }                 
+            }
+            </script>
+    </head>
+    <body>
+        <div id="selector">
+            <form id="ability">
+                <span><B>属性</B></span>
+            </form>
+            <form id="nation">
+                <span><B>种族</B></span>
+            </form>
+        </div>
+        <div id="main_part">
+            
+        </div>
+    </body>
+</html>
