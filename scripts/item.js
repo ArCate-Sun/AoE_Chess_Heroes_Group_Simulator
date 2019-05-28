@@ -1498,7 +1498,7 @@ obj={
     name: "翔龙",								// 名称
     cost: 4,									// 花费
     image: [									// 图片
-        "pictures/盾奴.jpg"
+        "pictures/翔龙.jpg"
     ],
     feature: [									// 特征
         "技能伤害",
