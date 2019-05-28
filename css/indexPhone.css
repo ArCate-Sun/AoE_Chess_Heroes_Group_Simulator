@@ -1,20 +1,22 @@
 body{
     margin: 0 auto;
     text-align: center;
-    font-size: 1em;
-    width: 802px;
+    font-size: 1.0em;
     background-color: #F7F7F7;
     font-family: PingFangSC-Medium, sans-serif;
 }
 
 #ability, #nation{
     text-align: left;
-}
-
-#ability{
-    margin-top: 16px;
+    margin-bottom: 5px;
 }
 
 table{
     border: none;
+    border-collapse: collapse;
+}
+
+#selector{
+    padding: 5px;
+    padding-bottom: 0px;
 }

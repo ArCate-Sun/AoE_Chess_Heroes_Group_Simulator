@@ -607,7 +607,7 @@ obj={
     name: "空蟹",								// 名称
     cost: 2,									// 花费
     image: [									// 图片
-        "pictures/雷震子.jpg",
+        "pictures/空蟹.jpg",
     ],
     feature: [									// 特征
         "技能伤害"

@@ -2,13 +2,18 @@
     <head>
         <meta charset="utf-8">
         <script type="text/javascript" src="../scripts/item.js"></script>
-        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 800px)" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 800px)" href="../css/indexPhone.css" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
         <script type="text/javascript" src="../scripts/group.js"></script>
         <script>
 
             window.onload = function(){
                 createSelector();
-                createTable(9, 6, obj);
+                if (screen.width > 800)
+                    createTable(9, 6, obj);
+                else
+                    createTable(18, 3, obj);
             }
             
             function getJsonLength(jsonData){
@@ -78,8 +83,14 @@
                             jsonTemp[card] = obj[card];
                     }
                 }
-                var numberLines = Math.ceil(getJsonLength(jsonTemp) / 6);
-                createTable(numberLines, 6, jsonTemp);              
+                if(screen.width > 800){
+                    var numberLines = Math.ceil(getJsonLength(jsonTemp) / 6);
+                    createTable(numberLines, 6, jsonTemp);    
+                } 
+                else{
+                    var numberLines = Math.ceil(getJsonLength(jsonTemp) / 3);
+                    createTable(numberLines, 3, jsonTemp); 
+                }         
             }
 
             function addRadio(root, name, value, checked){
@@ -115,9 +126,9 @@
                 var Body = document.getElementById('main_part');
                 var Table = document.createElement('table');
                 Table.id = "table";
-                Table.cellSpacing = "10";
+                if (screen.width > 800)
+                    Table.cellSpacing = "10";
                 Table.align = "left";
-                Table.setAttribute('border','1'); 
                 var size = getJsonLength(item);
                 var keys = new Array(size);
                 var count = 0;
@@ -128,12 +139,16 @@
                 for(var i=0; i<this.rows; i++){
                     var lRow=document.createElement('tr');
                     for(var j=0; j<this.lines; j++){                  
-                        var index = i*6+j;
+                        var index = i*this.lines+j;
                         if(index<size){
                             var textNode = document.createElement("img"); 
                             textNode.src = "../" + item[keys[index]].image[0]; 
                             textNode.alt = keys[index];
-                            textNode.style.width = "120px";                                         
+                            textNode.style.cursor = "pointer";
+                            if(screen.width > 800)
+                                textNode.style.width = "120px";   
+                            else
+                                textNode.style.width = ((screen.width - 8)/3).toString() + "px";                           
                             var lLine = document.createElement('td');
                             lLine.appendChild(textNode);
                             lRow.appendChild(lLine);
@@ -152,14 +167,14 @@
     <body>
         <div id="selector">
             <form id="ability">
-                <span><B>属性</B></span>
+                <span><B>种族</B></span>
             </form>
             <form id="nation">
-                <span><B>种族</B></span>
+                <span><B>职业</B></span>
             </form>
         </div>
         <div id="main_part">
-            
+            <hr style="border:3 double #333;" color=#777 size=3>
         </div>
     </body>
 </html>
