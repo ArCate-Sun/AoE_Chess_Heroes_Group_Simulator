@@ -9,11 +9,12 @@
         <script>
 
             window.onload = function(){
+                abilityName = "全部";
+                nationName = "全部";
                 createSelector();
-                if (screen.width > 800)
-                    createTable(9, 6, obj);
-                else
-                    createTable(18, 3, obj);
+                createTableDynamic();
+                abilityButton = document.getElementsByName("ability");
+                nationButton = document.getElementsByName("nation");
             }
             
             function getJsonLength(jsonData){
@@ -30,29 +31,35 @@
                 location.href = url;
             }
 
-            function updateImg(){
+            function createTableDynamic(){
+                if (screen.width > 800)
+                    createTable(9, 6, obj);
+                else
+                    createTable(18, 3, obj);
+            }
+
+            function updateImg(value){
                 //response to the radio change event
                 //remove old information
                 var body = document.getElementById("main_part");
                 var table = document.getElementById("table");
                 body.removeChild(table);
-                //get the radio selection
-                var abilityInput = document.getElementsByName("ability");
-                var nationInput = document.getElementsByName("nation");
-                var abilityName = "";
-                var nationName = "";
-                for(var i=0; i<abilityInput.length;i++ )
-                {
-                    if (abilityInput[i].checked)
-                        abilityName = abilityInput[i].value;
-                }                
-                for(var i=0;i<nationInput.length; i++)
-                {
-                    if (nationInput[i].checked)
-                        nationName = nationInput[i].value;
+                if(value.name == "ability"){
+                    for(var i=0;i<abilityButton.length;i++)
+                        if(abilityButton[i].value == abilityName)
+                            abilityButton[i].classList.remove('active');
+                    value.classList.add("active");
+                    abilityName = value.value;
                 }
-                if(nationName == "全部" && abilityName =="全部")    {
-                    createTable(9, 6, obj);
+                if(value.name == "nation"){
+                    for(var i=0;i<nationButton.length;i++)
+                        if(nationButton[i].value == nationName)
+                            nationButton[i].classList.remove('active');
+                    value.classList.add("active");
+                    nationName = value.value;
+                }
+                if(nationName == "全部" && abilityName =="全部") {
+                    createTableDynamic();
                     return;
                 }           
                 var jsonTemp = {};
@@ -93,30 +100,28 @@
                 }         
             }
 
-            function addRadio(root, name, value, checked){
-                // add radio box to the top bar
-                var label = document.createElement("label");
-                var input = document.createElement("input");
-                input.type = "radio";
-                input.value = value;
-                input.name = name;    
-                input.checked = checked;
-                input.onchange = function(){updateImg();};
-                label.innerHTML = value;
-                root.appendChild(input);
-                root.appendChild(label);
+            function addButton(root, name, value, flag){
+                var button = document.createElement("button");
+                if(flag)
+                    button.classList.add("active");
+                button.type = "button";
+                button.value = value;
+                button.name = name;
+                button.innerHTML = value;
+                button.onclick = function(){updateImg(this);};
+                root.appendChild(button);                   
             }
 
             function createSelector(){
                 // create selector
                 ability = document.getElementById("ability");
-                addRadio(ability, "ability", "全部", "checked");
+                addButton(ability, "ability", "全部", true);
                 for(var i=0;i<13;i++)
-                    addRadio(ability, "ability", group[i].name, "");                 
+                    addButton(ability, "ability", group[i].name, false);                                           
                 nation = document.getElementById("nation");
-                addRadio(nation, "nation", "全部", "checked");
+                addButton(nation, "nation", "全部", true);
                 for(var i=13;i<22;i++)
-                    addRadio(nation, "nation", group[i].name, "");
+                    addButton(nation, "nation", group[i].name, false);
             }
 
             function createTable(rows, lines, item){
@@ -166,15 +171,15 @@
     </head>
     <body>
         <div id="selector">
-            <form id="ability">
+            <div id="ability">
                 <span><B>种族</B></span>
-            </form>
-            <form id="nation">
+            </div>
+            <div id="nation">
                 <span><B>职业</B></span>
-            </form>
+            </div>
         </div>
         <div id="main_part">
-            <hr style="border:3 double #333;" color=#777 size=3>
+            <hr style="border:3 double #7D7DFF;" color=#921AFF size=3>
         </div>
     </body>
 </html>

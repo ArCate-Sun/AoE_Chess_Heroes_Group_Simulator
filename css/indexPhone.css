@@ -20,3 +20,34 @@ table{
     padding: 5px;
     padding-bottom: 0px;
 }
+
+button{
+    font-size: 0.9em;
+    margin: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: transparent;
+    text-align: center;
+    border: none;  
+}
+
+button:focus{ 
+    outline: none; 
+} 
+
+button:active{
+    background-color: #6A6AFF;
+    color: white;
+}
+
+#selector{
+    background-color: #DDDDFF;
+    padding-left: 8px;
+}
+
+.active{
+    background-color: #6A6AFF;
+    color: white;
+}
