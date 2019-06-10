@@ -37,43 +37,6 @@ obj={
     }
 },
 
-"童子": {
-    name: "童子",								// 名称
-    cost: 1,									// 花费
-    image: [									// 图片
-        "pictures/童子.jpg"
-    ],
-    feature: [									// 特征
-        "技能伤害",
-    ],
-    nature: [									// 连携
-        "灵能者",
-        "支援"
-    ],
-    ability: {									// 技能
-        description: "童子的能量场为周围圆形区域内友方单位提供充能，使其获得能量恢复效果。",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
-    },
-    property: {									// 兵种属性
-        attack: {								// 攻击
-            min_damage: [40, 80, 160],			// 最小攻击
-            max_damage: [45, 90, 180],		// 最大攻击
-            reduce_armor: [0, 0, 0],			// 护甲削弱
-            ability_damage: [0, 0, 0],			// 技能伤害 (%)
-            critical_strike: [0, 0, 0],			// 暴击 (%)
-            blood_sucking: [0, 0, 0],			// 吸血 (%)
-            speed: 1.7
-        },
-        defense: {								// 防御
-            health: [500, 1000, 2800],			// 生命
-            Armor: [5, 5, 5],					// 护甲
-            ability_defense: [0, 0, 0],			// 技能防御
-            miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
-        }
-    }
-},
-
 
 "天师": {
     name: "天师",								// 名称
@@ -202,7 +165,7 @@ obj={
         "狙击"
     ],
     ability: {									// 技能
-        description: "鸟骑兵强化自己，提升攻击力",		// 技能描述
+        description: "鸟骑兵连续物理攻击达到一定次数后的下一次攻击将短暂蓄力发射强力弩，此次攻击必定暴击。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
@@ -219,6 +182,44 @@ obj={
             health: [400, 800, 1600],			// 生命
             Armor: [5, 5, 5],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
+        }
+    }
+},
+
+
+"维修机": {
+    name: "维修机",								// 名称
+    cost: 1,									// 花费
+    image: [									// 图片
+        "pictures/维修机.jpg"
+    ],
+    feature: [									// 特征
+        "团队辅助"
+    ],
+    nature: [									// 连携
+        "空军",
+        "支援"
+    ],
+    ability: {									// 技能
+        description: "工程机持续强化一个距离自己最远的友军，大幅提升其攻击力，仅能伤害，友军被强化期间不会死亡。",		// 技能描述
+        damage: [300, 500, 700]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [83, 166, 333],			// 最小攻击
+            max_damage: [100, 200, 400],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 2.0
+        },
+        defense: {								// 防御
+            health: [550, 1100, 2200],			// 生命
+            Armor: [5, 5, 5],					// 护甲
+            ability_defense: [20, 20, 20],			// 技能防御(%)
             miss: [0, 0, 0],					// 闪避 (%)
             health_recovery: [0, 0, 0]			// 生命恢复
         }
@@ -444,6 +445,44 @@ obj={
         defense: {								// 防御
             health: [500, 1000, 1900],			// 生命
             Armor: [0, 0, 0],					// 护甲
+            ability_defense: [0, 0, 0],			// 技能防御
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
+        }
+    }
+},
+
+
+"童子": {
+    name: "童子",								// 名称
+    cost: 2,									// 花费
+    image: [									// 图片
+        "pictures/童子.jpg"
+    ],
+    feature: [									// 特征
+        "技能伤害",
+    ],
+    nature: [									// 连携
+        "灵能者",
+        "支援"
+    ],
+    ability: {									// 技能
+        description: "童子的能量场为周围圆形区域内友方单位提供充能，使其获得能量恢复效果。",		// 技能描述
+        damage: [300, 500, 700]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [40, 80, 160],			// 最小攻击
+            max_damage: [45, 90, 180],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.7
+        },
+        defense: {								// 防御
+            health: [500, 1000, 2800],			// 生命
+            Armor: [5, 5, 5],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
             health_recovery: [0, 0, 0]			// 生命恢复
@@ -1085,42 +1124,7 @@ obj={
     }
 },
 
-"维修机": {
-    name: "维修机",								// 名称
-    cost: 3,									// 花费
-    image: [									// 图片
-        "pictures/维修机.jpg"
-    ],
-    feature: [									// 特征
-        "团队辅助"
-    ],
-    nature: [									// 连携
-        "空军",
-        "支援"
-    ],
-    ability: {									// 技能
-        description: "工程机持续强化一个距离自己最远的友军，大幅提升其攻击力，仅能伤害，友军被强化期间不会死亡。",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
-    },
-    property: {									// 兵种属性
-        attack: {								// 攻击
-            min_damage: [83, 166, 333],			// 最小攻击
-            max_damage: [100, 200, 400],		// 最大攻击
-            reduce_armor: [0, 0, 0],			// 护甲削弱
-            ability_damage: [0, 0, 0],			// 技能伤害 (%)
-            critical_strike: [0, 0, 0],			// 暴击 (%)
-            blood_sucking: [0, 0, 0],			// 吸血 (%)
-            speed: 2.0
-        },
-        defense: {								// 防御
-            health: [550, 1100, 2200],			// 生命
-            Armor: [10, 10, 10],					// 护甲
-            ability_defense: [20, 20, 20],			// 技能防御(%)
-            miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
-        }
-    }
-},
+
 
 "特种兵": {
     name: "特种兵",								// 名称
