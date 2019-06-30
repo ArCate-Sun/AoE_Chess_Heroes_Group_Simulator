@@ -340,6 +340,45 @@ obj={
     }
 },
 
+
+"金刚": {
+    name: "金刚",								// 名称
+    cost: 1,									// 花费
+    image: [									// 图片
+        "pictures/金刚.jpg",
+    ],
+    feature: [									// 特征
+        "普攻伤害",
+        "承受伤害"
+    ],
+    nature: [									// 连携
+        "陆行者",
+        "护卫"
+    ],
+    ability: {									// 技能
+        description: "金刚爆掉自己的炎狱护甲，使自己附带吸血效果，并对周围圆形区域内的敌人造成技能伤害，且降低敌人的攻击速度",		// 技能描述
+        damage: [300, 500, 700]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [42, 85, 170],			// 最小攻击
+            max_damage: [46, 93, 187],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
+        },
+        defense: {								// 防御
+            health: [650, 1300, 2300],			// 生命
+            Armor: [5, 5, 5],					// 护甲
+            ability_defense: [0, 0, 0],			// 技能防御
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
+        }
+    }
+},
+
 "武僧熊猫": {
     name: "武僧熊猫",								// 名称
     cost: 1,									// 花费
@@ -529,81 +568,7 @@ obj={
     }
 },
 
-"雷震子": {
-    name: "雷震子",								// 名称
-    cost: 2,									// 花费
-    image: [									// 图片
-        "pictures/雷震子.jpg",
-    ],
-    feature: [									// 特征
-        "普攻伤害",
-        "后期carry"
-    ],
-    nature: [									// 连携
-        "灵能者",
-        "狙击"
-    ],
-    ability: {									// 技能
-        description: "蕾站在撞击雷锤产生锁链电流，使其在周围的敌人之间弹射，每次弹射伤害衰减40%",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
-    },
-    property: {									// 兵种属性
-        attack: {								// 攻击
-            min_damage: [61, 123, 246],			// 最小攻击
-            max_damage: [73, 147, 295],		// 最大攻击
-            reduce_armor: [0, 0, 0],			// 护甲削弱
-            ability_damage: [0, 0, 0],			// 技能伤害 (%)
-            critical_strike: [0, 0, 0],			// 暴击 (%)
-            blood_sucking: [0, 0, 0],			// 吸血 (%)
-            speed: 1.6
-        },
-        defense: {								// 防御
-            health: [500, 1000, 2000],			// 生命
-            Armor: [5, 5, 5],					// 护甲
-            ability_defense: [0, 0, 0],			// 技能防御
-            miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
-        }
-    }
-},
 
-"金刚": {
-    name: "金刚",								// 名称
-    cost: 2,									// 花费
-    image: [									// 图片
-        "pictures/金刚.jpg",
-    ],
-    feature: [									// 特征
-        "普攻伤害",
-        "承受伤害"
-    ],
-    nature: [									// 连携
-        "陆行者",
-        "护卫"
-    ],
-    ability: {									// 技能
-        description: "金刚爆掉自己的炎狱护甲，使自己附带吸血效果，并对周围圆形区域内的敌人造成技能伤害，且降低敌人的攻击速度",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
-    },
-    property: {									// 兵种属性
-        attack: {								// 攻击
-            min_damage: [45, 90, 180],			// 最小攻击
-            max_damage: [67, 135, 270],		// 最大攻击
-            reduce_armor: [0, 0, 0],			// 护甲削弱
-            ability_damage: [0, 0, 0],			// 技能伤害 (%)
-            critical_strike: [0, 0, 0],			// 暴击 (%)
-            blood_sucking: [0, 0, 0],			// 吸血 (%)
-            speed: 1.5
-        },
-        defense: {								// 防御
-            health: [650, 1300, 2300],			// 生命
-            Armor: [5, 5, 5],					// 护甲
-            ability_defense: [0, 0, 0],			// 技能防御
-            miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
-        }
-    }
-},
 
 "剑奴": {
     name: "剑奴",								// 名称
@@ -828,6 +793,43 @@ obj={
     }
 },
 
+"蝙蝠": {
+    name: "蝙蝠",								// 名称
+    cost: 2,									// 花费
+    image: [									// 图片
+        "pictures/蝙蝠.jpg"
+    ],
+    feature: [									// 特征
+        "技能伤害"
+    ],
+    nature: [									// 连携
+        "猛禽",
+        "狙击"
+    ],
+    ability: {									// 技能
+        description: "召唤小蝙蝠残影盘旋在敌人头顶，造成技能伤害同时减少其攻击速度，持续一段时间。",		// 技能描述
+        damage: [300, 500, 700]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [95, 210, 420],			// 最小攻击
+            max_damage: [114, 252, 504],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.8
+        },
+        defense: {								// 防御
+            health: [550, 1100, 2200],			// 生命
+            Armor: [5, 5, 5],					// 护甲
+            ability_defense: [20, 20, 20],		// 技能防御（%）
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
+        }
+    }
+},
+
 "猛毒兽": {
     name: "猛毒兽",								// 名称
     cost: 2,									// 花费
@@ -894,6 +896,45 @@ obj={
         },
         defense: {								// 防御
             health: [500, 1300, 2600],			// 生命
+            Armor: [5, 5, 5],					// 护甲
+            ability_defense: [0, 0, 0],			// 技能防御
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
+        }
+    }
+},
+
+
+"雷震子": {
+    name: "雷震子",								// 名称
+    cost: 3,									// 花费
+    image: [									// 图片
+        "pictures/雷震子.jpg",
+    ],
+    feature: [									// 特征
+        "普攻伤害",
+        "后期carry"
+    ],
+    nature: [									// 连携
+        "灵能者",
+        "狙击"
+    ],
+    ability: {									// 技能
+        description: "蕾站在撞击雷锤产生锁链电流，使其在周围的敌人之间弹射，每次弹射伤害衰减40%",		// 技能描述
+        damage: [300, 500, 700]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [61, 123, 246],			// 最小攻击
+            max_damage: [73, 147, 295],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.6
+        },
+        defense: {								// 防御
+            health: [500, 1000, 2000],			// 生命
             Armor: [5, 5, 5],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
@@ -1275,80 +1316,7 @@ obj={
     }
 },
 
-"蝙蝠": {
-    name: "蝙蝠",								// 名称
-    cost: 3,									// 花费
-    image: [									// 图片
-        "pictures/蝙蝠.jpg"
-    ],
-    feature: [									// 特征
-        "技能伤害"
-    ],
-    nature: [									// 连携
-        "猛禽",
-        "狙击"
-    ],
-    ability: {									// 技能
-        description: "召唤小蝙蝠残影盘旋在敌人头顶，造成技能伤害同时减少其攻击速度，持续一段时间。",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
-    },
-    property: {									// 兵种属性
-        attack: {								// 攻击
-            min_damage: [95, 210, 420],			// 最小攻击
-            max_damage: [114, 252, 504],		// 最大攻击
-            reduce_armor: [0, 0, 0],			// 护甲削弱
-            ability_damage: [0, 0, 0],			// 技能伤害 (%)
-            critical_strike: [0, 0, 0],			// 暴击 (%)
-            blood_sucking: [0, 0, 0],			// 吸血 (%)
-            speed: 1.8
-        },
-        defense: {								// 防御
-            health: [550, 1100, 2200],			// 生命
-            Armor: [5, 5, 5],					// 护甲
-            ability_defense: [20, 20, 20],		// 技能防御（%）
-            miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
-        }
-    }
-},
 
-"血鹰": {
-    name: "血鹰",								// 名称
-    cost: 3,									// 花费
-    image: [									// 图片
-        "pictures/血鹰.jpg"
-    ],
-    feature: [									// 特征
-        "承受伤害"
-    ],
-    nature: [									// 连携
-        "猛禽",
-        "野兽",
-		"先锋"
-    ],
-    ability: {									// 技能
-        description: "从空中降落到地面，落地过程中获得短暂无敌，生命值恢复至最大值并提升攻击力，由单词远程攻击变为三段近战攻击。",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
-    },
-    property: {									// 兵种属性
-        attack: {								// 攻击
-            min_damage: [50, 100, 200],			// 最小攻击
-            max_damage: [70, 140, 280],		// 最大攻击
-            reduce_armor: [0, 0, 0],			// 护甲削弱
-            ability_damage: [0, 0, 0],			// 技能伤害 (%)
-            critical_strike: [0, 0, 0],			// 暴击 (%)
-            blood_sucking: [0, 0, 0],			// 吸血 (%)
-            speed: 1.3
-        },
-        defense: {								// 防御
-            health: [650, 1300, 2600],			// 生命
-            Armor: [5, 5, 5],					// 护甲
-            ability_defense: [10, 20, 30],			// 技能防御(%)
-            miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
-        }
-    }
-},
 
 "忍者熊猫": {
     name: "忍者熊猫",								// 名称
@@ -1439,12 +1407,12 @@ obj={
     ],
     ability: {									// 技能
         description: "朝目标所在的矩形区域喷射不死烈焰，这些高温火焰会在目标区域造成多次伤害，持续一段时间。",		// 技能描述
-        damage: [300, 500, 700]					// 技能伤害
+        damage: [480, 700, 1120]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
-            min_damage: [101, 203, 407],			// 最小攻击
-            max_damage: [116, 232, 465],		// 最大攻击
+            min_damage: [71, 142, 285],			// 最小攻击
+            max_damage: [81, 162, 325],		// 最大攻击
             reduce_armor: [0, 0, 0],			// 护甲削弱
             ability_damage: [0, 0, 0],			// 技能伤害 (%)
             critical_strike: [0, 0, 0],			// 暴击 (%)
@@ -1492,6 +1460,44 @@ obj={
             health: [1050, 2100, 4200],			// 生命
             Armor: [5, 5, 5],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
+        }
+    }
+},
+
+"血鹰": {
+    name: "血鹰",								// 名称
+    cost: 4,									// 花费
+    image: [									// 图片
+        "pictures/血鹰.jpg"
+    ],
+    feature: [									// 特征
+        "承受伤害"
+    ],
+    nature: [									// 连携
+        "猛禽",
+        "野兽",
+		"先锋"
+    ],
+    ability: {									// 技能
+        description: "从空中降落到地面，落地过程中获得短暂无敌，生命值恢复至最大值并提升攻击力，由单词远程攻击变为三段近战攻击。",		// 技能描述
+        damage: [300, 500, 700]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [75, 150, 300],			// 最小攻击
+            max_damage: [90, 180, 360],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.3
+        },
+        defense: {								// 防御
+            health: [950, 1900, 3800],			// 生命
+            Armor: [10, 10, 10],					// 护甲
+            ability_defense: [0, 0, 0],			// 技能防御(%)
             miss: [0, 0, 0],					// 闪避 (%)
             health_recovery: [0, 0, 0]			// 生命恢复
         }
@@ -1585,7 +1591,7 @@ obj={
     ],
     nature: [									// 连携
         "傀儡",
-        "护卫"
+        "先锋"
     ],
     ability: {									// 技能
         description: "当棍奴持续攻击同一个目标时，将会获得额外的攻速加成，且加成效果达到10层是，棍奴会切换攻击动作；一旦棍奴改变了攻击目标，攻速加成效果将被清除。",		// 技能描述
@@ -2018,6 +2024,43 @@ obj={
             ability_defense: [0, 0, 0],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
             health_recovery: [5, 5, 5]			// 生命恢复
+        }
+    }
+},
+
+"玄龟":{
+    name: "玄龟",								// 名称
+    cost: 5,									// 花费
+    image: [									// 图片
+        "pictures/玄龟.jpg"
+    ],
+    feature: [									// 特征
+        "后期CARRY"
+    ],
+    nature: [									// 连携
+        "灵能者",
+        "护卫"
+    ],
+    ability: {									// 技能
+        description: "若释放技能时我方存货人数小于等于敌方存活人数，玄龟将缩进龟壳，失去攻击能力，增加护甲和技能防御，免疫眩晕、石化、魅惑，同事嘲讽所有敌方目标；若我方存活人数大于敌方，龟壳将从玄龟身上脱落，变成幼龟形态，往前喷射水柱，并降低自己的护甲。",		// 技能描述
+        damage: [150, 250, 350]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [34, 68, 137],			// 最小攻击
+            max_damage: [45, 91, 182],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.7
+        },
+        defense: {								// 防御
+            health: [1500, 2600, 4500],			// 生命
+            Armor: [10, 10, 10],					// 护甲
+            ability_defense: [20, 20, 0],			// 技能防御
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
         }
     }
 }
