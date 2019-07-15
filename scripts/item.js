@@ -203,7 +203,7 @@ obj={
         "支援"
     ],
     ability: {									// 技能
-        description: "工程机持续强化一个距离自己最远的友军，大幅提升其攻击力，仅能伤害，友军被强化期间不会死亡。",		// 技能描述
+        description: "工程机持续强化一个距离自己最远的友军，大幅提升其攻击力，技能伤害和攻击速度，友军被强化期间每秒回复一定能量且不会死亡。",		// 技能描述
         damage: [300, 500, 700]					// 技能伤害
     },
     property: {									// 兵种属性
@@ -793,6 +793,43 @@ obj={
     }
 },
 
+"轰炸机": {
+    name: "轰炸机",								// 名称
+    cost: 2,									// 花费
+    image: [									// 图片
+        "pictures/轰炸机.jpg"
+    ],
+    feature: [									// 特征
+        "技能伤害"
+    ],
+    nature: [									// 连携
+        "空军",
+        "爆破"
+    ],
+    ability: {									// 技能
+        description: "轰炸机对目标区域进行连续宏站，对半径7的圆形区域内造成对此伤害，轰炸期间提升自身50点护甲。",		// 技能描述
+        damage: [350, 550, 850]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [28, 56, 112],			// 最小攻击
+            max_damage: [35, 70, 141],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.5
+        },
+        defense: {								// 防御
+            health: [450, 900, 1800],			// 生命
+            Armor: [5, 5, 5],					// 护甲
+            ability_defense: [0, 0, 0],			// 技能防御
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
+        }
+    }
+},
+
 "蝙蝠": {
     name: "蝙蝠",								// 名称
     cost: 2,									// 花费
@@ -1128,42 +1165,7 @@ obj={
     }
 },
 
-"轰炸机": {
-    name: "轰炸机",								// 名称
-    cost: 3,									// 花费
-    image: [									// 图片
-        "pictures/轰炸机.jpg"
-    ],
-    feature: [									// 特征
-        "技能伤害"
-    ],
-    nature: [									// 连携
-        "空军",
-        "爆破"
-    ],
-    ability: {									// 技能
-        description: "轰炸机对目标区域进行连续宏站，对半径7的圆形区域内造成对此伤害，轰炸期间提升自身50点护甲。",		// 技能描述
-        damage: [300, 450, 600]					// 技能伤害
-    },
-    property: {									// 兵种属性
-        attack: {								// 攻击
-            min_damage: [41, 82, 166],			// 最小攻击
-            max_damage: [46, 92, 184],		// 最大攻击
-            reduce_armor: [0, 0, 0],			// 护甲削弱
-            ability_damage: [0, 0, 0],			// 技能伤害 (%)
-            critical_strike: [0, 0, 0],			// 暴击 (%)
-            blood_sucking: [0, 0, 0],			// 吸血 (%)
-            speed: 2.0
-        },
-        defense: {								// 防御
-            health: [400, 800, 1600],			// 生命
-            Armor: [5, 5, 5],					// 护甲
-            ability_defense: [0, 0, 0],			// 技能防御
-            miss: [0, 0, 0],					// 闪避 (%)
-            health_recovery: [0, 0, 0]			// 生命恢复
-        }
-    }
-},
+
 
 
 
@@ -1196,6 +1198,46 @@ obj={
         },
         defense: {								// 防御
             health: [450, 900, 1800],			// 生命
+            Armor: [5, 5, 5],					// 护甲
+            ability_defense: [0, 0, 0],			// 技能防御
+            miss: [0, 0, 0],					// 闪避 (%)
+            health_recovery: [0, 0, 0]			// 生命恢复
+        }
+    }
+},
+
+
+
+"勾魂使": {
+    name: "勾魂使",								// 名称
+    cost: 3,									// 花费
+    image: [									// 图片
+        "pictures/勾魂使.jpg"
+    ],
+    feature: [									// 特征
+        "技能伤害",
+        "真实伤害"
+    ],
+    nature: [									// 连携
+        "不朽者",
+        "刺杀"
+    ],
+    ability: {									// 技能
+        description: "勾魂使闪现至敌人身后，用弯刀对敌人进行一次处决，造成单次技能伤害",		// 技能描述
+        damage: [300, 500, 700]					// 技能伤害
+    },
+    property: {									// 兵种属性
+        attack: {								// 攻击
+            min_damage: [49, 198, 196],			// 最小攻击
+            max_damage: [63, 126, 252],		// 最大攻击
+            reduce_armor: [0, 0, 0],			// 护甲削弱
+            ability_damage: [0, 0, 0],			// 技能伤害 (%)
+            critical_strike: [0, 0, 0],			// 暴击 (%)
+            blood_sucking: [0, 0, 0],			// 吸血 (%)
+            speed: 1.1
+        },
+        defense: {								// 防御
+            health: [550, 1100, 2200],			// 生命
             Armor: [5, 5, 5],					// 护甲
             ability_defense: [0, 0, 0],			// 技能防御
             miss: [0, 0, 0],					// 闪避 (%)
@@ -1707,7 +1749,7 @@ obj={
     ],
     ability: {									// 技能
         description: "聚能方舟指挥机群轰炸指定区域，对路径上的敌人造成伤害",		// 技能描述
-        damage: [250, 400, 550]					// 技能伤害
+        damage: [300, 450, 600]					// 技能伤害
     },
     property: {									// 兵种属性
         attack: {								// 攻击
